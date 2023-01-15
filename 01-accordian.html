@@ -26,18 +26,31 @@
     .accordian {
       width: 700px;
       margin: 100px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
     }
 
-    .item {}
+    .item {
+      box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      column-gap: 24px;
+      row-gap: 32px;
+      align-items: center;
+    }
 
     .number,
     .text {
       font-size: 24px;
-      font-weight: 500;
-      color: #087f5b
+      font-weight: 600;
+      /* color: #087f5b */
     }
 
-    .text {}
+    .number {
+      color: #ced4da
+    }
 
     .icon {
       width: 24px;
@@ -45,7 +58,10 @@
       stroke: #087f5b;
     }
 
-    .hidden-box {}
+    .hidden-box {
+      grid-column: 2 / 3;
+      display: none;
+    }
 
     .hidden-box p {
       line-height: 1.6;
@@ -60,6 +76,20 @@
       flex-direction: column;
       gap: 12px;
     }
+
+    /*OPEN_STATUES*/
+    .open {
+      border-top: 4px solid #087f5b;
+    }
+
+    .open .number,
+    .open .text {
+      color: #087f5b;
+    }
+
+    .open .hidden-box {
+      display: block;
+    }
   </style>
 </head>
 
@@ -71,8 +101,20 @@
       <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
+      <div class="hidden-box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi sunt nihil ad
+          incidunt?
+          Accusamus optio, odit similique nostrum fugiat sed vel aperiam molestiae sunt repudiandae soluta officiis id
+          laboriosam ea?</p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Tempore maiores optio sapiente in, voluptates explicabo corrupti modi, beatae</li>
+          <li>voluptatem atque perferendis reiciendis molestiae accusamus</li>
+          <li>quasi aut doloribus perspiciatis aliquam numquam.</li>
+        </ul>
+      </div>
     </div>
-    <div class="item">
+    <div class="item open">
       <p class="number">02</p>
       <p class="text">How long do I have to return my chair?</p>
       <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -97,6 +139,18 @@
       <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
+      <div class="hidden-box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi sunt nihil ad
+          incidunt?
+          Accusamus optio, odit similique nostrum fugiat sed vel aperiam molestiae sunt repudiandae soluta officiis id
+          laboriosam ea?</p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Tempore maiores optio sapiente in, voluptates explicabo corrupti modi, beatae</li>
+          <li>voluptatem atque perferendis reiciendis molestiae accusamus</li>
+          <li>quasi aut doloribus perspiciatis aliquam numquam.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
