@@ -32,8 +32,9 @@ grey:#343a40;
     padding: 32px;
     padding-left: 86px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 86px;
+    position: relative;
   }
 
   img {
@@ -61,10 +62,37 @@ grey:#343a40;
     color: #c3fae8;
   }
 
-  button {
-    width: 25px;
-    height: 25px;
+  .btn {
+    background-color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .btn--left {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .btn--right {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .btn-icon {
+    stroke: #087f5b;
+    height: 24px;
+    width: 24px;
   }
 </style>
 
@@ -79,12 +107,12 @@ grey:#343a40;
       <p class="testimonial-author">Maria de Almeida</p>
       <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
     </blockquote>
-    <button class="btn">
+    <button class="btn btn--left">
       <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
       </svg>
     </button>
-    <button class="btn">
+    <button class="btn btn--right">
       <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
       </svg>
