@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Carousel Component</title>
 </head>
 <style>
   /*
@@ -26,7 +26,35 @@ grey:#343a40;
 </style>
 
 <body>
-
+  <div class="carousel">
+    <img src="maria.jpg">
+    <blockquote class="testimonial">
+      <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eius, natus sed
+        illum laboriosam
+        quasi
+        distinctio possimus libero commodi repudiandae nobis nemo, maiores recusandae vero architecto, eum soluta
+        ipsam
+        consequuntur."</p>
+      <p class="testimonial-author">Maria de Almeida</p>
+      <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
+    </blockquote>
+    <button class="btn btn--left">
+      <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
+    <button>
+      <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
 </body>
 
 </html>
