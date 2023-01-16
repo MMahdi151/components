@@ -23,6 +23,49 @@ grey:#343a40;
     color: #343a40;
     line-height: 1;
   }
+
+  .carousel {
+    background-color: #087f5b;
+    width: 800px;
+    margin: 100px auto;
+    border-radius: 8px;
+    padding: 32px;
+    padding-left: 86px;
+    display: flex;
+    align-items: center;
+    gap: 86px;
+  }
+
+  img {
+    height: 200px;
+    border-radius: 8px;
+    transform: scale(1.5);
+    box-shadow: 0px 24px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  .testimonial-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    color: #e6fcf5;
+  }
+
+  .testimonial-author {
+    color: #c3fae8;
+    margin-bottom: 4px;
+  }
+
+  .testimonial-job {
+    font-size: 14px;
+    color: #c3fae8;
+  }
+
+  button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
 </style>
 
 <body>
@@ -32,18 +75,16 @@ grey:#343a40;
       <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eius, natus sed
         illum laboriosam
         quasi
-        distinctio possimus libero commodi repudiandae nobis nemo, maiores recusandae vero architecto, eum soluta
-        ipsam
-        consequuntur."</p>
+        distinctio possimus libero commodi repudiandae nobis nemo."</p>
       <p class="testimonial-author">Maria de Almeida</p>
       <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
     </blockquote>
-    <button class="btn btn--left">
+    <button class="btn">
       <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
       </svg>
     </button>
-    <button>
+    <button class="btn">
       <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
       </svg>
